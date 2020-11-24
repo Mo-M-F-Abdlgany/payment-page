@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment page</title>
+        <link rel="stylesheet" href="./libs/bt5/css/bootstrap.min.css">       
+         <link rel="stylesheet" href="./py.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class="d-flex">
+    <div id="cont">
+        <img src="./1.jpg" class="img">
+
+    </div>
+    <div id="cont-2">
+        <h1>Payment Details</h1>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Card Number</label>
+            <!-- <input type="text" class="form-control" id="inputnumber"> -->
+            <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+          </div>
+          <div class="col-md-6">
+            <label for="input" class="form-label">Name on Card</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          <div class="d-flex">
+          <div class="pl-0">
+            <label for="input" class="form-label">EXP Date</label>
+            <input type="text" class="form-control w-50 pl-1" id="inputEmail4">
+          </div>
+    
+    <div >
+        <label for="input" class="form-label">CVC</label>
+        <input type="text" class="form-control w-50" id="inputEmail4">
+      </div>
+</div>
+<div class="pt-5 pl-3">
+<button type="submit" class="btn btn-gold btn-lg btn-block w-50">Pay Now</button>
+</div></div>
+    </body>
+    <script src="./libs/bt5/js/bootstrap.bundle.min.js"></script>
+</html>
